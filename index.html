@@ -20,8 +20,87 @@
 			        	<a href="#menu"><span>Menu</span></a>
 
 			</header>
-			
+			<style>
+				/* 기본 스타일 */
+				#menu ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+				}
+				
+				#menu ul li {
+					position: relative;
+					display: inline-block;
+					margin-right: 10px;
+				}
+				
+				#menu ul li a {
+					text-decoration: none;
+					padding: 8px 12px;
+					display: block;
+					background: #0078d7;
+					color: white;
+					border-radius: 4px;
+				}
+				
+				#menu ul li a:hover {
+					background: #0056a3;
+				}
+				
+				/* 서브 메뉴 스타일 */
+				.submenu {
+					display: none;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					background: #f1f1f1;
+					padding: 5px 0;
+					border-radius: 4px;
+				}
+				
+				.submenu li {
+					display: block;
+					margin: 0;
+				}
+				
+				.submenu li a {
+					background: none;
+					color: #333;
+					padding: 8px 12px;
+					border-radius: 0;
+				}
+				
+				.submenu li a:hover {
+					background: #ddd;
+				}
+				
+				/* 서브 메뉴 표시 */
+				#menu ul li:hover .submenu {
+					display: block;
+				}
+				</style>
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="http://wp.shimks.com">wp.shimks.com</a></li>
+					<li>
+						<a href="generic.html">Family</a>
+						<ul class="submenu">
+							<li><a href="sks1.html">Trip 하나</a></li>
+							<li><a href="sks2.html">Trip 둘</a><li>
+							<li><a href="sks3.html">Trip 셋</a></li>
+							<li><a href="sks4.html">Trip 넷</a></li>
+							<li><a href="sks5.html">Trip 다섯</a></li>
+							<li><a href="sks6.html">Trip 여섯</a></li>
+						</ul>
+					</li>
+					<li><a href="elements.html">Players</a></li>
+				</ul>
+			</nav>
+						
 			<!-- Nav -->
+			<!-- Nav 원래 소스 -->
+			<!--
 			<nav id="menu">
 			   <ul class="links">
 			        <li><a href="index.html">Home</a></li>
@@ -30,6 +109,7 @@
 					<li><a href="elements.html">Players.</a></li>
 				</ul>
 			</nav>
+			-->
 			<!-- 서브 메뉴 넣기 -->
 			<!--
 					<nav id="menu">

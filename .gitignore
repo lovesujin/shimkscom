@@ -3,7 +3,12 @@
 ## foler no uploard
 /wordpress
 /xe
+/log
+/shimkslog
 
 ## log no uploard
 *.log
+report.html
+shimkslog.html
+
 

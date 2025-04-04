@@ -1,0 +1,58 @@
+{
+	"name": "buddypress/buddypress",
+	"description": "BuddyPress adds community features to WordPress. Member Profiles, Activity Streams, Direct Messaging, Notifications, and more!",
+	"type": "wordpress-plugin",
+	"keywords": [
+		"activity",
+		"community",
+		"friends",
+		"groups",
+		"messaging",
+		"notifications",
+		"profiles",
+		"social network"
+	],
+	"homepage": "https://buddypress.org",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "BuddyPress Community",
+			"homepage": "https://buddypress.org/about/"
+		}
+	],
+	"support": {
+		"forum": "https://buddypress.org/support/",
+		"docs": "https://codex.buddypress.org/",
+		"issues": "https://buddypress.trac.wordpress.org/",
+		"rss": "https://buddypress.org/feed/",
+		"source": "https://buddypress.trac.wordpress.org/browser/",
+		"wiki": "https://codex.buddypress.org/"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"require": {
+		"php": ">=5.6.0"
+	},
+	"require-dev": {
+		"buddypress/bp-coding-standards": "dev-trunk",
+		"yoast/phpunit-polyfills": "^1.0",
+		"spatie/phpunit-watcher": "^1.23"
+	},
+	"scripts": {
+		"test": "@php ./vendor/phpunit/phpunit/phpunit",
+		"test_multi": "@php ./vendor/phpunit/phpunit/phpunit -c tests/phpunit/multisite.xml",
+		"phpunit": "@test",
+		"phpcs": "@php ./vendor/bin/phpcs . --basepath=.",
+		"phpcbf": "@php ./vendor/bin/phpcbf . --basepath=.",
+		"phpcs-escape": "@php ./vendor/bin/phpcs src --extensions=php -sp --standard=BuddyPress --sniffs=WordPress.Security.EscapeOutput,WordPress.Security.SafeRedirect",
+		"phpcompat": "@php ./vendor/bin/phpcs --standard=PHPCompatibilityWP --extensions=php -sp --runtime-set testVersion 5.6- src tests",
+		"test:watch": [
+			"Composer\\Config::disableProcessTimeout",
+			"phpunit-watcher watch"
+		]
+	}
+}

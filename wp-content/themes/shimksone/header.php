@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Custom Theme</title>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery.js'; ?>">
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'./cssjs/bootstrap.js'; ?>">
 </script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery-ui.min.js'; ?>">
 </script>

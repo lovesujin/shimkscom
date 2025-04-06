@@ -10,7 +10,6 @@
     font-size: 5rem;
     color: #1ac41a; /* Green color */
     text-align: left; /* Aligns the text to the left */
-    background-color: #af4a4a; /* Red color */
     margin-bottom: 20px;
 }
 .h1right {
@@ -46,6 +45,53 @@
     background-color: #a9da7c; /* Green color */
     margin-bottom: 20px;    
 }
+.div {
+    font-size: 4rem;
+    background-color: #af4a4a; /* Red color */
+    color: #1d3124; /* Dark color */
+    text-align: center; /* Center aligns the text */
+    margin-bottom: 20px;    
+}
+.divleft {
+    font-size: 4rem;
+    color: #1d3124;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.divright {
+    font-size: 4rem;
+    color: #1d3124;
+    text-align: right;
+    margin-bottom: 20px;
+}
+div.0_3 {
+    font-size: 3rem;
+    background-color: #af4a4a; /* Red color */
+    opacity: 0.3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+div.0_5 {
+    font-size: 3rem;
+    background-color: #af4a4a; /* Red color */
+    opacity: 0.5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+div.0_7 {
+    font-size: 3rem;
+    background-color: #af4a4a; /* Red color */
+    opacity: 0.7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+div.0_9 {
+    font-size: 3rem;
+    background-color: #af4a4a; /* Red color */
+    opacity: 0.9;
+    text-align: center;
+    margin-bottom: 20px;
+}  
 .p {
     font-size: 3rem;
     color: #1d3124;

@@ -1,100 +1,60 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-.body {
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+/* 기본 스타일 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../img/su_1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+/* 메뉴 스타일 */
+.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
 }
-.h1left {
-    font-size: 5rem;
-    color: #1ac41a; /* Green color */
-    text-align: left; /* Aligns the text to the left */
-    margin-bottom: 20px;
+
+.menu ul li {
+    margin: 0 15px;
 }
-.h1right {
-    font-size: 5rem;
-    color: #af4a4a; /* Red color */
-    text-align: right; 
-    margin-bottom: 20px;
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
 }
-.h1center {
-    font-size: 5rem;
-    color: #5e0ff0; /* Purple color */              
-    text-align: center; /* Center aligns the text */
-    margin-bottom: 20px;    
+
+.menu ul li a:hover {
+    color: #f0a500;
 }
-.h1leftbg {
-    font-size: 5rem;
-    color: #1ac41a;   /* Green color */
-    text-align: left;   /* Aligns the text to the left */
-    background-color: #af4a4a;  /* Red color */
-    margin-bottom: 20px;
+
+/* 메인 콘텐츠 스타일 */
+main {
+    padding: 50px 20px;
 }
-.h1rightbg {
-    font-size: 5rem;
-    color: #af4a4a; /* Red color */
-    text-align: right; 
-    background-color: #8a3fec; /* Green color */
-    margin-bottom: 20px;
+
+main section {
+    margin: 50px 0;
 }
-.h1centerbg {
-    font-size: 5rem;
-    color: #5e0ff0; /* Purple color */              
-    text-align: center; /* Center aligns the text */
-    background-color: #a9da7c; /* Green color */
-    margin-bottom: 20px;    
+
+/* 하단 카피라이트 */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
 }
-.div {
-    font-size: 4rem;
-    background-color: #af4a4a; /* Red color */
-    color: #1d3124; /* Dark color */
-    text-align: center; /* Center aligns the text */
-    margin-bottom: 20px;    
-}
-.divleft {
-    font-size: 4rem;
-    color: #1d3124;
-    text-align: left;
-    margin-bottom: 20px;
-}
-.divright {
-    font-size: 4rem;
-    color: #1d3124;
-    text-align: right;
-    margin-bottom: 20px;
-}
-div.0_3 {
-    font-size: 3rem;
-    background-color: #af4a4a; /* Red color */
-    opacity: 0.3;
-    text-align: center;
-    margin-bottom: 20px;
-}
-div.0_5 {
-    font-size: 3rem;
-    background-color: #af4a4a; /* Red color */
-    opacity: 0.5;
-    text-align: center;
-    margin-bottom: 20px;
-}
-div.0_7 {
-    font-size: 3rem;
-    background-color: #af4a4a; /* Red color */
-    opacity: 0.7;
-    text-align: center;
-    margin-bottom: 20px;
-}
-div.0_9 {
-    font-size: 3rem;
-    background-color: #af4a4a; /* Red color */
-    opacity: 0.9;
-    text-align: center;
-    margin-bottom: 20px;
-}  
-.p {
-    font-size: 3rem;
-    color: #1d3124;
-    text-align: center;
-    margin-bottom: 20px;
-}   
